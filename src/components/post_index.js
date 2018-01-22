@@ -18,7 +18,6 @@ class PostsIndex extends Component{
   }
 
   componentWillMount(){
-    console.log('working');
     this.props.fetchPosts();
   }
 
