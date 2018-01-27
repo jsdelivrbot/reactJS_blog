@@ -23,6 +23,11 @@ class PostShow extends Component{
 
         const {post} = this.props;
 
+        if(typeof(post)=='undefined')
+        {
+            return <div>OOPS SOMETHING WENT WRONG</div>;
+        }
+
         if(!post|| post.id!=this.props.params.post_id)
         {
             return <div>Loading...</div>
